@@ -1,6 +1,6 @@
 import method.MethodSignature;
 
-import static algorithm.FindElementExample.NUMS;
+import static algorithm.FindElementExample.nums;
 
 public class Main {
 
@@ -13,8 +13,8 @@ public class Main {
 
         System.out.println("-----------------");
         System.out.println("The result is: " + MethodSignature.multiplyElements(numbers));
-        for (int i = 0; i < NUMS.length; i++) {
-            System.out.println("The element at index " + i + " is: " + NUMS[i]);
+        for (int i = 0; i < nums.length; i++) {
+            System.out.println("The element at index " + i + " is: " + nums[i]);
         }
     }
 }
