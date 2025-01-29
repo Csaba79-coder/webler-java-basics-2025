@@ -1,3 +1,9 @@
 Webler Java basics - 2025
 
-# Creating basic README.md file from featuer/basisc branch
+# Igazság Tábla (Truth Table) - bitwise operators
+
+![img.png](src/main/resources/static/truth.png)
+
+# Bool logic - logical operators
+
+![img.png](src/main/resources/static/bool.png)
