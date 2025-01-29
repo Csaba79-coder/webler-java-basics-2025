@@ -2,7 +2,7 @@ package algorithm;
 
 public class FindElementExample {
 
-    public static final int[] NUMS = {0, 6, 1, 9, 66, 2, 8};
+    public static int[] nums = {6, 1, 9, 66, 2, 8};
 
     public static void main(String[] args) {
 
@@ -18,7 +18,7 @@ public class FindElementExample {
         System.out.println("The minimum number is: " + min);
 
         System.out.println("------------------");
-        int[] minExtra = findMinExtra(NUMS);
+        int[] minExtra = findMinExtra(nums);
         System.out.println("The minimum number is: " + minExtra[0]);
         System.out.println("The index of the minimum number is: " + minExtra[1]);
         System.out.println("The sequence of the minimum number is: " + minExtra[2]);
@@ -58,7 +58,7 @@ public class FindElementExample {
 
     private static int[] findMinExtra(int[] numbers) {
         int index = 0;
-        int element = index + 1;
+        int element = 1;
 
         if (numbers == null || numbers.length == 0) {
             throw new IllegalArgumentException("The array is empty or null!");
@@ -69,6 +69,7 @@ public class FindElementExample {
             if (numbers[i] < min) {
                 min = numbers[i];
                 index = i;
+                element = index + 1;
             }
         }
         return new int[]{min, index, element};
